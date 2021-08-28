@@ -69,6 +69,11 @@ a {
   opacity: 0.75;
 }
 
+.header__link:hover {
+  opacity: 1;
+  border-bottom: 0.6px solid #fff;
+}
+
 .header__link:last-child {
   margin-right: 0;
 }
