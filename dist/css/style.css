@@ -106,12 +106,15 @@ li {
 
 .hero {
   background-color: #1c2431;
+  background-image: url("../../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 120% 320px;
 }
 
 .hero__container {
   margin: 0 auto;
   padding: 0 2.8rem;
-  background-color: #1c2431;
   max-width: 35em;
 }
 

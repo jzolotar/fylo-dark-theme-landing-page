@@ -1,10 +1,13 @@
 .hero {
   background-color: $darkBlueIntro;
+  background-image: url("../../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 120% 320px;
 
   &__container {
     margin: 0 auto;
     padding: 0 2.8rem;
-    background-color: $darkBlueIntro;
     // background-image: url("/images/bg-curvy-mobile.svg");
     // background-size: contain;
     // background-repeat: no-repeat;
