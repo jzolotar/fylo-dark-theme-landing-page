@@ -1,0 +1,36 @@
+.hero {
+  background-color: $darkBlueIntro;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 2.8rem;
+    background-color: $darkBlueIntro;
+    // background-image: url("/images/bg-curvy-mobile.svg");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position-y: 11.8rem;
+    max-width: 35em;
+
+    @include breakpoint-up(medium) {
+      background-position-y: 2.8rem;
+    }
+  }
+
+  &__logo {
+  }
+  &__info {
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  &__desc {
+    text-align: center;
+  }
+}

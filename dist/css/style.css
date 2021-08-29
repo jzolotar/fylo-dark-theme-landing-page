@@ -20,6 +20,7 @@ body {
   font-size: 1rem;
   min-height: 100vh;
   background-color: #333;
+  color: #f4f4f4;
 }
 
 h1,
@@ -33,6 +34,18 @@ h4 {
 a {
   text-decoration: none;
   color: #f4f4f4;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.blue--btn {
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  padding: 0.8rem 4.7rem;
+  border-radius: 50px;
 }
 
 .header {
@@ -76,5 +89,48 @@ a {
 
 .header__link:last-child {
   margin-right: 0;
+}
+
+.hero {
+  background-color: #1c2431;
+}
+
+.hero__container {
+  margin: 0 auto;
+  padding: 0 2.8rem;
+  background-color: #1c2431;
+  max-width: 35em;
+}
+
+@media (min-width: 40em) {
+  .hero__container {
+    background-position-y: 2.8rem;
+  }
+}
+
+.hero__info {
+  margin-top: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__title {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.hero__desc {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
