@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   background-color: $darkBlueMainBg;
   color: #f4f4f4;
+  position: relative;
 }
 
 h1,
@@ -39,6 +40,16 @@ a {
 img {
   display: block;
   width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.8rem;
 }
 
 .blue--btn {
