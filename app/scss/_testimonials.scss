@@ -1,0 +1,42 @@
+.testimonials {
+  padding: 0 2.5rem;
+  margin-top: 9rem;
+  &__testimonial {
+    background-color: $darkBlueTestimonials;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    position: relative;
+  }
+  &__testimonial.first::before {
+    content: "";
+    width: 10%;
+    height: 20%;
+    background-image: url("/images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -25px;
+    left: 8px;
+    z-index: -1;
+  }
+
+  &__desc {
+    line-height: 1.6;
+    font-size: 0.76rem;
+  }
+  &__person {
+    margin-top: 0.65rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 12%;
+      border-radius: 50%;
+    }
+    &__info {
+      margin-left: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}

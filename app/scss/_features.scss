@@ -1,0 +1,27 @@
+.features {
+  background: $darkBlueMainBg;
+  margin: 0 auto;
+  margin-top: 8.75rem;
+  padding: 0 2.8rem;
+  max-width: 37rem;
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7.5rem;
+  }
+  &__img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 1.6rem;
+  }
+  &__title {
+  }
+  &__desc {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.93rem;
+  }
+}

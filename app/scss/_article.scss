@@ -1,0 +1,42 @@
+.article {
+  padding: 0 2.5rem;
+  &__img {
+  }
+  &__info {
+    margin-top: 1.2rem;
+  }
+  &__title {
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+  }
+  &__desc {
+    font-size: 0.92rem;
+    margin-bottom: 1.1rem;
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.75rem;
+    // border-bottom: 1px solid red;
+    position: relative;
+
+    &::after {
+      background-color: $cyan;
+      bottom: -5px;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 55%;
+    }
+    img {
+      width: 8%;
+      margin-left: 0.42rem;
+    }
+    a {
+      color: $cyan;
+    }
+  }
+}
