@@ -12,9 +12,11 @@
     margin-bottom: 1.7rem;
     @include breakpoint-up(medium) {
       max-width: 23%;
+      margin-bottom: 3.2rem;
     }
     @include breakpoint-up(large) {
       max-width: 18%;
+      margin-bottom: 3.2rem;
     }
   }
   &__contacts {
@@ -24,6 +26,11 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1.5rem;
+  }
+  &__contact:first-child {
+    @include breakpoint-up(large) {
+      padding-right: 2.5rem;
+    }
   }
   &__links__1 {
     margin-bottom: 1.5rem;

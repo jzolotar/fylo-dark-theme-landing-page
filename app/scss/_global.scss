@@ -69,6 +69,14 @@ li {
 }
 
 .grid--footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr max-content max-content 1.6fr;
+    gap: 1.4rem;
+  }
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr max-content max-content 1fr;
+    gap: 2rem;
+  }
 }
