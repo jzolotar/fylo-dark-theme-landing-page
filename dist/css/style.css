@@ -75,6 +75,13 @@ li {
   }
 }
 
+.grid--footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
 .header {
   background-color: #1c2431;
 }
@@ -457,6 +464,18 @@ li {
   width: 50%;
   padding-left: 0.4rem;
   margin-bottom: 1.7rem;
+}
+
+@media (min-width: 40em) {
+  .footer__logo {
+    max-width: 23%;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__logo {
+    max-width: 18%;
+  }
 }
 
 .footer__contacts {

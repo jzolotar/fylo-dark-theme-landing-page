@@ -10,6 +10,12 @@
     width: 50%;
     padding-left: 0.4rem;
     margin-bottom: 1.7rem;
+    @include breakpoint-up(medium) {
+      max-width: 23%;
+    }
+    @include breakpoint-up(large) {
+      max-width: 18%;
+    }
   }
   &__contacts {
     margin-bottom: 3.5rem;
