@@ -58,3 +58,12 @@ li {
   border-radius: 50px;
   text-align: center;
 }
+
+.grid--btn {
+  width: 100%;
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1rem;
+  }
+}

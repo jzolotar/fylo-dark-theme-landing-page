@@ -5,6 +5,10 @@
   background-position: bottom;
   background-size: 120% 320px;
 
+  @include breakpoint-up(large) {
+    background-image: url("../../images/bg-curvy-desktop.svg");
+  }
+
   &__container {
     margin: 0 auto;
     padding: 0 2.8rem;

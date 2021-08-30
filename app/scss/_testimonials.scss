@@ -1,6 +1,12 @@
 .testimonials {
   padding: 0 2.5rem;
   margin-top: 9rem;
+
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
   &__testimonial {
     background-color: $darkBlueTestimonials;
     padding: 1.2rem;
@@ -10,15 +16,21 @@
   }
   &__testimonial.first::before {
     content: "";
-    width: 10%;
+    width: 20%;
     height: 20%;
     background-image: url("/images/bg-quotes.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     top: -25px;
-    left: 8px;
+    left: 5px;
     z-index: -1;
+    @include breakpoint-up(medium) {
+      width: 40%;
+      top: -28px;
+      left: -5px;
+      z-index: -1;
+    }
   }
 
   &__desc {

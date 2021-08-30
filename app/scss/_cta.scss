@@ -3,6 +3,15 @@
   position: absolute;
   top: -11.3rem;
   left: 0;
+  max-width: 50rem;
+
+  @include breakpoint-up(medium) {
+    left: 0;
+    right: 0;
+    top: -8.8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__container {
     background-color: $darkBlueIntro;
@@ -10,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 40px;
+    padding: 2.5rem 2.5rem;
     border-radius: 0.93rem;
   }
   &__title {
@@ -22,17 +31,21 @@
   }
 
   &__btn {
+    display: block;
     margin-top: 1rem;
     background: linear-gradient(to right, $cyan, $blue);
     width: 100%;
     text-align: center;
     border-radius: 50px;
     padding: 0.8rem 0;
+    @include breakpoint-up(large) {
+      margin-top: 0;
+    }
   }
   &__input {
     width: 100%;
     text-align: left;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     padding: 0.8rem 0;
     padding-left: 1rem;
     border: none;
