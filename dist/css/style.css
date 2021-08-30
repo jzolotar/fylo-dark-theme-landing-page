@@ -348,7 +348,7 @@ li {
   content: "";
   width: 20%;
   height: 20%;
-  background-image: url("/images/bg-quotes.png");
+  background-image: url("../../images/bg-quotes.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
