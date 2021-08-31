@@ -131,6 +131,13 @@ li {
   opacity: 0.75;
 }
 
+@media (min-width: 40em) {
+  .header__link {
+    margin-right: 2.6rem;
+    font-size: 0.95rem;
+  }
+}
+
 .header__link:hover {
   opacity: 1;
   border-bottom: 0.6px solid #fff;
